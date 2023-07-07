@@ -1,0 +1,573 @@
+<header class="sticky-top">
+
+    <app-header></app-header>
+
+</header>
+
+<!---------------------------------
+--------------------------------------------->
+
+<ng-container>
+
+    <div class="container-fluid cart">
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-9">
+                <div class="box cart-box table-responsive">
+                    <table class="table table-hover table-borderless caption-top table-sm">
+                        <caption> Shopping Cart
+                            <!-- 
+                        <p class="text-center"> User Name : {{locName1}} {{locName2}}  </p>
+                        <p class="text-center"> Address :  {{locAddress}} </p>
+                        <p class="text-center"> Phone : {{locPhone}} </p> -->
+
+                        </caption>
+
+                        <thead class="mx-auto">
+                            <th scope="col"> SNO </th>
+                            <th scope="col"> Image </th>
+                            <th scope="col"> Description </th>
+                            <th scope="col"> Unit </th>
+                            <th scope="col"> Price </th>
+                            <th scope="col"> Quantity </th>
+                            <th scope="col"> Amount </th>
+                            <th scope="col"> Action </th>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td> 1 </td>
+                                <td>
+                                    <img src="/assets/product/spices/z1.png" alt="prod-img"
+                                        class="img-fluid object-fit-cover border rounded" width="75">
+                                </td>
+                                <td>
+                                    <p>  Category : Spices </p>
+                                    <p> Brand : SuperFoods </p>
+                                </td>
+                                <td>
+                                    <select class="form-select w-75" aria-label="Default select example">
+                                        <option selected> Variant </option>
+                                        <option value="250gm"> 250 gm </option>
+                                        <option value="500gm"> 500 gm </option>
+                                        <option value="750gm"> 750 gm </option>
+                                        <option value="1kg"> 1 kg </option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <p> {{ 100 |currency:"INR"}} </p>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <button class="btn btn-danger btn-sm"> - </button>
+                                        &nbsp;
+                                        <span> 2 </span> &nbsp;
+                                        <button class="btn btn-primary btn-sm"> + </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>{{ 200 | currency:"INR"}}</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-outline-danger"> <i class="las la-trash-alt"></i> </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> 2 </td>
+                                <td>
+                                    <img src="/assets/product/flours/f1.png" alt="prod-img"
+                                        class="img-fluid object-fit-cover border rounded" width="75">
+                                </td>
+                                <td>
+                                    <p> Category : Flours </p>
+                                    <p> Brand : SuperFoods </p>
+                                </td>
+                                <td>
+                                    <select class="form-select w-75" aria-label="Default select example">
+                                        <option selected> Variant </option>
+                                        <option value="250gm"> 250 gm </option>
+                                        <option value="500gm"> 500 gm </option>
+                                        <option value="750gm"> 750 gm </option>
+                                        <option value="1kg"> 1 kg </option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <p> {{ 200 |currency:"INR"}} </p>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <button class="btn btn-danger btn-sm"> - </button>
+                                        &nbsp;
+                                        <span> 2 </span> &nbsp;
+                                        <button class="btn btn-primary btn-sm"> + </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>{{ 400 | currency:"INR"}}</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-outline-danger"> <i class="las la-trash-alt"></i> </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> 3 </td>
+                                <td>
+                                    <img src="/assets/product/pulses/p1.png" alt="prod-img"
+                                        class="img-fluid object-fit-cover border rounded" width="75">
+                                </td>
+                                <td>
+                                    <p> Category : Pulse </p>
+                                    <p> Brand : SuperFoods </p>
+                                </td>
+                                <td>
+                                    <select class="form-select w-75" aria-label="Default select example">
+                                        <option selected> Variant </option>
+                                        <option value="250gm"> 250 gm </option>
+                                        <option value="500gm"> 500 gm </option>
+                                        <option value="750gm"> 750 gm </option>
+                                        <option value="1kg"> 1 kg </option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <p> {{ 300 |currency:"INR"}} </p>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <button class="btn btn-danger btn-sm"> - </button>
+                                        &nbsp;
+                                        <span> 2 </span> &nbsp;
+                                        <button class="btn btn-primary btn-sm"> + </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>{{ 600 | currency:"INR"}}</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-outline-danger"> <i class="las la-trash-alt"></i> </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> 4 </td>
+                                <td>
+                                    <img src="/assets/product/oils/o1.png" alt="prod-img"
+                                        class="img-fluid object-fit-cover border rounded" width="75">
+                                </td>
+                                <td>
+                                    <p> Category : Oils </p>
+                                    <p> Brand : SuperFoods </p>
+                                </td>
+                                <td>
+                                    <select class="form-select w-75" aria-label="Default select example">
+                                        <option selected> Variant </option>
+                                        <option value="250gm"> 250 gm </option>
+                                        <option value="500gm"> 500 gm </option>
+                                        <option value="750gm"> 750 gm </option>
+                                        <option value="1kg"> 1 kg </option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <p> {{ 400 |currency:"INR"}} </p>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <button class="btn btn-danger btn-sm"> - </button>
+                                        &nbsp;
+                                        <span> 2 </span> &nbsp;
+                                        <button class="btn btn-primary btn-sm"> + </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>{{ 800 | currency:"INR"}}</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-outline-danger"> <i class="las la-trash-alt"></i> </button>
+                                </td>
+                            </tr>
+                            <!-- <tr>
+                                <td> 4 </td>
+                                <td>
+                                    <img src="/assets/product/oils/o1.png" alt="prod-img"
+                                        class="img-fluid object-fit-cover border rounded" width="75">
+                                </td>
+                                <td>
+                                    <p> Oils </p>
+                                    <p> Brand : SuperFoods </p>
+                                </td>
+                                <td>
+                                    <select class="form-select w-75" aria-label="Default select example">
+                                        <option selected> Variant </option>
+                                        <option value="250gm"> 250 gm </option>
+                                        <option value="500gm"> 500 gm </option>
+                                        <option value="750gm"> 750 gm </option>
+                                        <option value="1kg"> 1 kg </option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <p> {{ 400 |currency:"INR"}} </p>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <button class="btn btn-danger btn-sm"> - </button>
+                                        &nbsp;
+                                        <span> 2 </span> &nbsp;
+                                        <button class="btn btn-primary btn-sm"> + </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>{{ 800 | currency:"INR"}}</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-outline-danger"> <i class="las la-trash-alt"></i> </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> 4 </td>
+                                <td>
+                                    <img src="/assets/product/oils/o1.png" alt="prod-img"
+                                        class="img-fluid object-fit-cover border rounded" width="75">
+                                </td>
+                                <td>
+                                    <p> Oils </p>
+                                    <p> Brand : SuperFoods </p>
+                                </td>
+                                <td>
+                                    <select class="form-select w-75" aria-label="Default select example">
+                                        <option selected> Variant </option>
+                                        <option value="250gm"> 250 gm </option>
+                                        <option value="500gm"> 500 gm </option>
+                                        <option value="750gm"> 750 gm </option>
+                                        <option value="1kg"> 1 kg </option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <p> {{ 400 |currency:"INR"}} </p>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <button class="btn btn-danger btn-sm"> - </button>
+                                        &nbsp;
+                                        <span> 2 </span> &nbsp;
+                                        <button class="btn btn-primary btn-sm"> + </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>{{ 800 | currency:"INR"}}</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-outline-danger"> <i class="las la-trash-alt"></i> </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> 4 </td>
+                                <td>
+                                    <img src="/assets/product/oils/o1.png" alt="prod-img"
+                                        class="img-fluid object-fit-cover border rounded" width="75">
+                                </td>
+                                <td>
+                                    <p> Oils </p>
+                                    <p> Brand : SuperFoods </p>
+                                </td>
+                                <td>
+                                    <select class="form-select w-75" aria-label="Default select example">
+                                        <option selected> Variant </option>
+                                        <option value="250gm"> 250 gm </option>
+                                        <option value="500gm"> 500 gm </option>
+                                        <option value="750gm"> 750 gm </option>
+                                        <option value="1kg"> 1 kg </option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <p> {{ 400 |currency:"INR"}} </p>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <button class="btn btn-danger btn-sm"> - </button>
+                                        &nbsp;
+                                        <span> 2 </span> &nbsp;
+                                        <button class="btn btn-primary btn-sm"> + </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>{{ 800 | currency:"INR"}}</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-outline-danger"> <i class="las la-trash-alt"></i> </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> 4 </td>
+                                <td>
+                                    <img src="/assets/product/oils/o1.png" alt="prod-img"
+                                        class="img-fluid object-fit-cover border rounded" width="75">
+                                </td>
+                                <td>
+                                    <p> Oils </p>
+                                    <p> Brand : SuperFoods </p>
+                                </td>
+                                <td>
+                                    <select class="form-select w-75" aria-label="Default select example">
+                                        <option selected> Variant </option>
+                                        <option value="250gm"> 250 gm </option>
+                                        <option value="500gm"> 500 gm </option>
+                                        <option value="750gm"> 750 gm </option>
+                                        <option value="1kg"> 1 kg </option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <p> {{ 400 |currency:"INR"}} </p>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <button class="btn btn-danger btn-sm"> - </button>
+                                        &nbsp;
+                                        <span> 2 </span> &nbsp;
+                                        <button class="btn btn-primary btn-sm"> + </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>{{ 800 | currency:"INR"}}</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-outline-danger"> <i class="las la-trash-alt"></i> </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> 4 </td>
+                                <td>
+                                    <img src="/assets/product/oils/o1.png" alt="prod-img"
+                                        class="img-fluid object-fit-cover border rounded" width="75">
+                                </td>
+                                <td>
+                                    <p> Oils </p>
+                                    <p> Brand : SuperFoods </p>
+                                </td>
+                                <td>
+                                    <select class="form-select w-75" aria-label="Default select example">
+                                        <option selected> Variant </option>
+                                        <option value="250gm"> 250 gm </option>
+                                        <option value="500gm"> 500 gm </option>
+                                        <option value="750gm"> 750 gm </option>
+                                        <option value="1kg"> 1 kg </option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <p> {{ 400 |currency:"INR"}} </p>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <button class="btn btn-danger btn-sm"> - </button>
+                                        &nbsp;
+                                        <span> 2 </span> &nbsp;
+                                        <button class="btn btn-primary btn-sm"> + </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>{{ 800 | currency:"INR"}}</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-outline-danger"> <i class="las la-trash-alt"></i> </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> 4 </td>
+                                <td>
+                                    <img src="/assets/product/oils/o1.png" alt="prod-img"
+                                        class="img-fluid object-fit-cover border rounded" width="75">
+                                </td>
+                                <td>
+                                    <p> Oils </p>
+                                    <p> Brand : SuperFoods </p>
+                                </td>
+                                <td>
+                                    <select class="form-select w-75" aria-label="Default select example">
+                                        <option selected> Variant </option>
+                                        <option value="250gm"> 250 gm </option>
+                                        <option value="500gm"> 500 gm </option>
+                                        <option value="750gm"> 750 gm </option>
+                                        <option value="1kg"> 1 kg </option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <p> {{ 400 |currency:"INR"}} </p>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <button class="btn btn-danger btn-sm"> - </button>
+                                        &nbsp;
+                                        <span> 2 </span> &nbsp;
+                                        <button class="btn btn-primary btn-sm"> + </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>{{ 800 | currency:"INR"}}</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-outline-danger"> <i class="las la-trash-alt"></i> </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> 4 </td>
+                                <td>
+                                    <img src="/assets/product/oils/o1.png" alt="prod-img"
+                                        class="img-fluid object-fit-cover border rounded" width="75">
+                                </td>
+                                <td>
+                                    <p> Oils </p>
+                                    <p> Brand : SuperFoods </p>
+                                </td>
+                                <td>
+                                    <select class="form-select w-75" aria-label="Default select example">
+                                        <option selected> Variant </option>
+                                        <option value="250gm"> 250 gm </option>
+                                        <option value="500gm"> 500 gm </option>
+                                        <option value="750gm"> 750 gm </option>
+                                        <option value="1kg"> 1 kg </option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <p> {{ 400 |currency:"INR"}} </p>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <button class="btn btn-danger btn-sm"> - </button>
+                                        &nbsp;
+                                        <span> 2 </span> &nbsp;
+                                        <button class="btn btn-primary btn-sm"> + </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>{{ 800 | currency:"INR"}}</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-outline-danger"> <i class="las la-trash-alt"></i> </button>
+                                </td>
+                            </tr> -->
+
+                        </tbody>
+
+                    </table>
+
+                    <hr>
+
+                    <!-- <p> Free Delivery Within <select  name="" id="">
+                            <option value="1"> 1 Weeks </option>
+                            <option value="2"> 2 weeks </option>
+                        </select> </p> -->
+
+                        <select class="form-select form-select-sm w-25 mb-3" aria-label="Default select example">
+                            <option selected>  Free Delivery Within weeks </option>
+                            <option value="1"> 1 Weeks </option>
+                            <option value="2"> 2 Weeks </option>
+                            <option value="3"> 3 Weeks </option>
+                          </select>
+
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-lg-3">
+
+                <div class="box bg-white">
+                    <h5> Have coupon ? </h5>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Coupon code" aria-label="coupon"
+                            aria-describedby="coupon">
+                        <button type="button" class="btn btn-outline-secondary" id="coupon"> Apply </button>
+                    </div>
+
+                </div>
+
+                <div class="tot-amt">
+
+                    <div class="box bg-white">
+                        <p class="fs-5"> Total price : <span class="float-end fw-bold"> {{totalPrice | currency:"INR"}}
+                            </span> </p>
+                        <p class="fs-5"> Discount : <span class="float-end text-success fw-bold"> - $00.00 </span> </p>
+                        <p class="fs-5"> Tax : <span class="float-end text-danger fw-bold"> + $00.00 </span> </p>
+                        <hr>
+                        <p class="fs-5"> Total : <span class="float-end fw-bold"> {{totalPrice | currency:"INR"}}
+                            </span></p>
+
+                        <div class="d-grid gap-2">
+                            <button type="button" class="btn btn-success mb-2" [routerLink]="['']"> Make
+                                Purchase </button>
+                            <button type="button" class="btn btn-outline-secondary mb-2" [routerLink]="['../product']">
+                                Back to Shop </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</ng-container>
+
+<section id="secure">
+
+    <div class="container-fluid">
+        <div class="row secure my-5">
+            <div class="col-md-4 text-center col-sm-6 col-12">
+                <span class="text-success"><i class="las la-lock"></i></span>
+                <h2 class="title"> Your Information is Safe </h2>
+                <p class="info"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt officiis ut ex
+                    voluptas qui quidem sapiente, pariatur porro? Voluptates esse doloribus, vitae deserunt id
+                    explicabo
+                    velit. Ad animi.
+                </p>
+            </div>
+
+            <div class="col-md-4 text-center col-sm-6 col-12">
+                <span class="text-success"><i class="las la-shield-alt"></i></span>
+                <h2 class="title"> Secure Checkout </h2>
+                <p class="info"> online payment processing system allows your customers to easily and securely place
+                    orders online. Customers can simply follow a secure link in their quote to an online checkout
+                    page
+                    where they can complete their order.
+                </p>
+            </div>
+
+            <div class="col-md-4 text-center col-sm-6 col-12">
+                <span class="text-success"><i class="las la-phone"></i></span>
+                <h2 class="title"> 24/7 Customer Support </h2>
+                <p class="info"> facere, maxime ullam fugit cumque nulla corrupti quisquam asperiores tempora
+                    assumenda ab sint sapiente sit eius in laboriosam et expedita! Tempora recusandae magni minima
+                    adipisci?
+                </p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+<!--------------------------------------------------Empty Cart----------------------------------------------------------------->
+
+<!-- <ng-container>
+    <div class="container cart mb-3">
+        <div class="card center align-items-center">
+            <h5 class="text-center mt-4"> My Cart </h5>
+
+
+            <img src="./assets/icons/empty.png" alt="Empty Cart" class="img-fluid empty">
+            <h4 class="text-center"> Your cart is empty! </h4>
+            <h6 class="text-center"> Add item to it now </h6>
+            <button class="btn btn-primary mb-5" [routerLink]="['../product']"> Shop Now </button>
+
+        </div>
+    </div>
+</ng-container> -->
+
+<!------------------------------------------
+-------------------------------------------------->
+
+<footer>
+    <app-footer> </app-footer>
+</footer>

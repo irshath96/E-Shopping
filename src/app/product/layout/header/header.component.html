@@ -1,0 +1,96 @@
+<ng-container *ngIf="!showHead">
+
+    <nav class="navbar navbar-expand-lg bg-white sticky-top head">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="/assets/icons/logo-r.png" alt="logo" class="img-fluid logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" [routerLink]="['/home']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact : true}"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" [routerLink]="['/about']" routerLinkActive="active-link"> About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" [routerLink]="['/product']" routerLinkActive="active-link"> Product
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" [routerLink]="['/contact']" routerLinkActive="active-link"> Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" [routerLink]="['/login']" routerLinkActive ="active-link">
+                            <i class="las la-user"></i>
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" [routerLink]="['/cart']" routerLinkActive="active-link">
+                             <i class="las la-shopping-cart"></i> <span class="badge bg-secondary">4</span> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</ng-container>
+
+<!---------------------------------
+---------------------------------------------->
+
+<ng-container *ngIf="showHead">
+
+    <nav class="navbar navbar-expand-lg bg-white sticky-top head">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="/assets/icons/logo-r.png" alt="logo" class="img-fluid logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" [routerLink]="['/home']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact : true}"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" [routerLink]="['/about']" routerLinkActive="active-link"> About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" [routerLink]="['/product']" routerLinkActive="active-link"> Product
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" [routerLink]="['/contact']" routerLinkActive="active-link"> Contact
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown dropstart">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="las la-user-circle"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"> My Profile </a></li>
+                            <li><a class="dropdown-item" href="#"> My orders </a></li>
+                            <li><a class="dropdown-item" href="#"> LogOut </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" [routerLink]="['/checkout']" routerLinkActive="active-link">
+                             <i class="las la-shopping-cart"></i> <span class="badge bg-secondary">4</span> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</ng-container>
+

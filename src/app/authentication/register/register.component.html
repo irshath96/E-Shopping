@@ -1,0 +1,89 @@
+<header class="sticky-top">
+    <app-header></app-header>
+</header>
+
+<!-----------------------
+----------------------------->
+
+<ng-container>
+
+    <div class="container login">
+
+        <div class="row border rounded-5 shadow p-3 bg-white cards">
+
+            <div class="col-md-6 rounded-4 left-side">
+                <div class="login-image mb-3">
+                    <img src="/assets/icons/login.png" alt="login-logo" class="img-fluid" style="width: 250px;">
+                </div>
+                <p class="text-white fs-2 fw-bold"> Be Verified </p>
+                <small class="text-white text-center text-wrap" style="width: 17rem;"> Join experienced Designers on
+                    this platform. </small>
+
+            </div>
+
+            <div class="col-md-6 right-side">
+                <div class="row align-items-center">
+                    <div class="header">
+                        <h2> Hello, Again </h2>
+                        <p> We are happy to have you back. </p>
+                    </div>
+
+                    <form class="row g-3" [formGroup]="registerForm" (ngSubmit)="registerData()">
+
+                        <div class="col-md-6">
+                            <label class="form-label" for="fname"> First Name </label>
+                            <input type="text" class="form-control bg-light fs-6" placeholder="abcdef"
+                                formControlName="firstName">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="lname"> Last Name </label>
+                            <input type="text" class="form-control bg-light fs-6" placeholder="zyxwvu"
+                                formControlName="lastName">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label" for="email"> Email Address </label>
+                            <input type="email" class="form-control bg-light fs-6" placeholder="abc@gmail.com"
+                                formControlName="email">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label" for="phone"> Phone </label>
+                            <input type="number" class="form-control bg-light fs-6" placeholder="9876543210"
+                                formControlName="phone">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label" for="password"> Password </label>
+                            <input type="password" class="form-control bg-light fs-6" placeholder=" ****** " formControlName="password">
+                        </div>
+
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-lg btn-success w-100 fs-6"
+                                [disabled]="registerForm.invalid">
+                                Login </button>
+                        </div>
+
+                    </form>
+
+                    <div class="input-group my-3">
+                        <button class="btn btn-lg btn-light w-100 fs-6"> <img src="/assets/icons/google.png"
+                                alt="G-Logo" class="me-2" style="width: 20px;"> <small> Sign In with Google </small>
+                        </button>
+                    </div>
+
+                    <div class="row">
+                        <small> Already Have a Account ? <a [routerLink]="['../login']"> Login Now </a> </small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</ng-container>
+
+<!-------------------------------
+---------------------------------------->
+
+<footer>
+    <app-footer></app-footer>
+</footer>

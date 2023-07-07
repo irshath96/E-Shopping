@@ -1,0 +1,32 @@
+.logo {
+    height: 50px;
+    border-radius: 200px;
+}
+
+.head {
+    box-shadow: 1px 1px 1px silver;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.active-link {
+    background-color: #79c51d ;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+i {
+    font-size: 24px;
+}
+
+// .dropdown:hover ul {
+//     display: block;
+// }

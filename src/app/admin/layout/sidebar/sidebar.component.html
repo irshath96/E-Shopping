@@ -1,0 +1,10 @@
+<aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item" *ngFor="let menu of menuItems">
+            <a class="nav-link collapsed" [routerLink]="menu.path" routerLinkActive="activeLink">
+                <i class="{{menu.icon}}"></i>
+                <span>{{menu.title}}</span>
+            </a>
+        </li>
+    </ul>
+</aside>
